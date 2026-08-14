@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Voltarix</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">
+                <a href="index.html">VOLTARIX</a>
+            </h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active-nav">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="product-hero">
+
+            <div class="product-hero-content">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h1>
+                    Let's talk about your
+                    <span>energy needs.</span>
+                </h1>
+
+                <p class="product-hero-description">
+                    Contact Voltarix for product enquiries,
+                    technical information and energy solution
+                    requirements.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="product-showcase">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    CONTACT US
+                </p>
+
+                <h2>Voltarix Sdn Bhd</h2>
+
+                <p>
+                    No. 52, Jalan Seroja 5d/2,<br>
+                    Seksyen BS6, Bukit Sentosa,<br>
+                    48300 Rawang, Selangor.
+                </p>
+
+                <br>
+
+                <p>
+                    Tel: +60 124 665 106
+                </p>
+
+                <p>
+                    Email: sales@voltarix.com.my
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="contact-form-section">
+
+    <div class="contact-form-container">
+
+        <div class="section-heading">
+            <p class="section-label">SEND US AN ENQUIRY</p>
+
+            <h2>Get in touch</h2>
+
+            <p>
+                Have a question or interested in one of our energy solutions?
+                Send us an enquiry below.
+            </p>
+        </div>
+
+
+        <form
+            class="contact-form"
+            id="contact-form"
+            onsubmit="sendEmail(event)"
+        >
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="firstName">
+                        First Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="lastName">
+                        Last Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email <span>*</span>
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="company">
+                    Company
+                </label>
+
+                <input
+                    type="text"
+                    id="company"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject <span>*</span>
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message <span>*</span>
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="7"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="contact-submit-button"
+            >
+                Send Enquiry
+                <span>→</span>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <footer class="site-footer">
+
+        <div>
+
+            <h2>VOLTARIX</h2>
+
+            <p>
+                Smart energy solutions for a sustainable future.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Voltarix Sdn Bhd. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

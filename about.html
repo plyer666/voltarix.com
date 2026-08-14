@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>About Us | Voltarix</title>
+
+    <!-- MAIN WEBSITE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- ABOUT PAGE ONLY -->
+    <style>
+
+        /* =========================================
+           ABOUT PAGE
+        ========================================== */
+
+        .about-page {
+            background: #f5f8fc;
+            color: #10243e;
+        }
+
+
+
+        /* =========================================
+           HERO
+        ========================================== */
+
+        .about-hero {
+            position: relative;
+
+            min-height: 520px;
+
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 75% 30%,
+                    rgba(0, 157, 255, 0.35),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    115deg,
+                    #031b33 0%,
+                    #063d69 50%,
+                    #0075b9 100%
+                );
+        }
+
+
+        .about-hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.12);
+
+            right: -100px;
+            top: -150px;
+        }
+
+
+        .about-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.1);
+
+            right: 180px;
+            bottom: -180px;
+        }
+
+
+        .about-hero-content {
+            position: relative;
+
+            z-index: 2;
+
+            width: min(1180px, 90%);
+
+            margin: 0 auto;
+
+            padding: 100px 0;
+        }
+
+
+        .about-label {
+            display: inline-block;
+
+            color: #56c8ff;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+
+        .about-hero h1 {
+            max-width: 780px;
+
+            color: white;
+
+            font-size:
+                clamp(3rem, 6vw, 5.5rem);
+
+            line-height: 0.98;
+
+            letter-spacing: -3px;
+
+            margin: 0;
+        }
+
+
+        .about-hero h1 span {
+            color: #4bc8ff;
+        }
+
+
+        .about-hero p {
+            max-width: 650px;
+
+            margin-top: 30px;
+
+            color:
+                rgba(255, 255, 255, 0.75);
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =========================================
+           WHO WE ARE
+        ========================================== */
+
+        .about-intro {
+            width: min(1180px, 90%);
+
+            margin: 0 auto;
+
+            padding: 110px 0;
+
+            display: grid;
+
+            grid-template-columns:
+                0.9fr 1.1fr;
+
+            gap: 90px;
+
+            align-items: center;
+        }
+
+
+        .about-intro-small {
+            color: #008bd1;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2.5px;
+        }
+
+
+        .about-intro h2 {
+            font-size:
+                clamp(2.4rem, 4vw, 4rem);
+
+            line-height: 1.05;
+
+            margin: 14px 0 25px;
+
+            color: #062e50;
+
+            letter-spacing: -2px;
+        }
+
+
+        .about-intro h2 span {
+            color: #008fd5;
+        }
+
+
+        .about-intro-text p {
+            color: #607084;
+
+            line-height: 1.85;
+
+            margin-bottom: 18px;
+
+            font-size: 16px;
+        }
+
+
+
+        /* =========================================
+           ENERGY CARD
+        ========================================== */
+
+        .energy-card {
+            min-height: 410px;
+
+            border-radius: 28px;
+
+            padding: 50px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #072e50,
+                    #006fae
+                );
+
+            box-shadow:
+                0 30px 60px
+                rgba(5, 50, 85, 0.18);
+        }
+
+
+        .energy-card::before {
+            content: "";
+
+            position: absolute;
+
+            width: 350px;
+            height: 350px;
+
+            border-radius: 50%;
+
+            top: -130px;
+            right: -80px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(
+                        65,
+                        195,
+                        255,
+                        0.55
+                    ),
+                    transparent 65%
+                );
+        }
+
+
+        .energy-icon {
+            position: absolute;
+
+            top: 50px;
+            left: 50px;
+
+            width: 75px;
+            height: 75px;
+
+            border-radius: 18px;
+
+            background:
+                rgba(255, 255, 255, 0.08);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.15);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 38px;
+        }
+
+
+        .energy-card h3 {
+            color: white;
+
+            font-size: 32px;
+
+            margin-bottom: 12px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .energy-card p {
+            color:
+                rgba(255, 255, 255, 0.7);
+
+            line-height: 1.7;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+
+        /* =========================================
+           WHAT WE DO
+        ========================================== */
+
+        .what-we-do {
+            background: #062f50;
+
+            padding: 110px 0;
+        }
+
+
+        .section-container {
+            width: min(1180px, 90%);
+
+            margin: 0 auto;
+        }
+
+
+        .section-heading {
+            max-width: 700px;
+
+            margin-bottom: 60px;
+        }
+
+
+        .section-heading .mini-title {
+            color: #4dc7ff;
+
+            font-size: 13px;
+
+            letter-spacing: 2.5px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+
+        .section-heading h2 {
+            color: white;
+
+            font-size:
+                clamp(2.4rem, 4vw, 4rem);
+
+            line-height: 1.05;
+
+            margin: 14px 0;
+
+            letter-spacing: -2px;
+        }
+
+
+        .section-heading p {
+            color:
+                rgba(255, 255, 255, 0.6);
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =========================================
+           SOLUTION CARDS
+        ========================================== */
+
+        .solution-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .solution-card {
+            min-height: 250px;
+
+            padding: 35px;
+
+            background:
+                rgba(255, 255, 255, 0.045);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.08);
+
+            border-radius: 20px;
+
+            transition:
+                transform 0.3s ease,
+                background 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+
+        .solution-card:hover {
+            transform:
+                translateY(-7px);
+
+            background:
+                rgba(255, 255, 255, 0.075);
+
+            border-color:
+                rgba(77, 199, 255, 0.35);
+        }
+
+
+        .solution-number {
+            color: #4dc7ff;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            margin-bottom: 45px;
+        }
+
+
+        .solution-card h3 {
+            color: white;
+
+            font-size: 21px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .solution-card p {
+            color:
+                rgba(255, 255, 255, 0.6);
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+
+        /* =========================================
+           VALUES
+        ========================================== */
+
+        .values-section {
+            width: min(1180px, 90%);
+
+            margin: 0 auto;
+
+            padding: 120px 0;
+        }
+
+
+        .values-heading {
+            text-align: center;
+
+            max-width: 700px;
+
+            margin:
+                0 auto 65px;
+        }
+
+
+        .values-heading span {
+            color: #008fd5;
+
+            font-size: 13px;
+
+            letter-spacing: 2.5px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+
+        .values-heading h2 {
+            font-size:
+                clamp(2.5rem, 4vw, 4rem);
+
+            color: #062e50;
+
+            margin: 14px 0;
+
+            letter-spacing: -2px;
+        }
+
+
+        .values-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .value {
+            background: white;
+
+            padding: 38px 30px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid #e8edf3;
+        }
+
+
+        .value-icon {
+            width: 48px;
+            height: 48px;
+
+            border-radius: 12px;
+
+            background: #eaf7ff;
+
+            color: #008fd5;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 22px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .value h3 {
+            color: #062e50;
+
+            margin-bottom: 10px;
+
+            font-size: 18px;
+        }
+
+
+        .value p {
+            color: #6b798b;
+
+            line-height: 1.65;
+
+            font-size: 15px;
+        }
+
+
+
+        /* =========================================
+           CTA
+        ========================================== */
+
+        .about-cta {
+            width: min(1180px, 90%);
+
+            margin:
+                0 auto 110px;
+
+            padding: 70px;
+
+            border-radius: 28px;
+
+            background:
+                radial-gradient(
+                    circle at 90% 40%,
+                    rgba(
+                        45,
+                        185,
+                        255,
+                        0.35
+                    ),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    120deg,
+                    #062e50,
+                    #005f96
+                );
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 40px;
+        }
+
+
+        .about-cta h2 {
+            color: white;
+
+            font-size:
+                clamp(2rem, 3.5vw, 3.3rem);
+
+            margin: 0 0 10px;
+
+            letter-spacing: -1px;
+        }
+
+
+        .about-cta p {
+            color:
+                rgba(255, 255, 255, 0.65);
+        }
+
+
+        .about-cta a {
+            display: inline-block;
+
+            padding: 16px 30px;
+
+            border-radius: 50px;
+
+            background: white;
+
+            color: #06375b;
+
+            font-weight: 700;
+
+            white-space: nowrap;
+
+            text-decoration: none;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .about-cta a:hover {
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(0, 0, 0, 0.18);
+        }
+
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================== */
+
+        @media (max-width: 900px) {
+
+            .about-intro {
+                grid-template-columns: 1fr;
+
+                gap: 45px;
+            }
+
+
+            .solution-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            .values-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            .about-cta {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding: 50px 35px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .about-hero {
+                min-height: 470px;
+            }
+
+
+            .about-hero-content {
+                padding: 75px 0;
+            }
+
+
+            .about-hero h1 {
+                letter-spacing: -1.5px;
+            }
+
+
+            .solution-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .energy-card {
+                padding: 35px;
+            }
+
+
+            .energy-icon {
+                top: 35px;
+                left: 35px;
+            }
+
+
+            .about-cta {
+                margin-bottom: 60px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body class="about-page">
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+
+            <a
+                href="index.html"
+                class="logo-link"
+            >
+
+                <img
+                    src="images/voltarix-logo.jpeg"
+                    alt="Voltarix"
+                    class="logo-image"
+                >
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="about.html"
+                        class="active-nav"
+                    >
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="about-hero">
+
+        <div class="about-hero-content">
+
+            <span class="about-label">
+                About Voltarix
+            </span>
+
+
+            <h1>
+                Powering a smarter
+                <span>
+                    energy future.
+                </span>
+            </h1>
+
+
+            <p>
+                Voltarix develops integrated energy solutions
+                designed to make power more reliable, flexible
+                and efficient — combining battery energy
+                storage, solar technologies and intelligent
+                energy management.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHO WE ARE
+    ========================================== -->
+
+    <section class="about-intro">
+
+        <div class="about-intro-text">
+
+            <span class="about-intro-small">
+                Who We Are
+            </span>
+
+
+            <h2>
+                Energy built around
+                <span>
+                    what comes next.
+                </span>
+            </h2>
+
+
+            <p>
+                Voltarix Sdn Bhd provides modern energy
+                solutions centred around Battery Energy
+                Storage Systems (BESS), renewable power
+                and hybrid energy infrastructure.
+            </p>
+
+
+            <p>
+                Our approach brings together energy storage,
+                power conversion, solar generation and
+                intelligent monitoring to create systems
+                capable of supporting both everyday energy
+                requirements and critical backup applications.
+            </p>
+
+
+            <p>
+                From energy resilience to better utilisation
+                of renewable generation, our goal is simple:
+                make energy work smarter.
+            </p>
+
+        </div>
+
+
+
+        <div class="energy-card">
+
+            <div class="energy-icon">
+                ⚡
+            </div>
+
+
+            <h3>
+                Integrated Energy
+            </h3>
+
+
+            <p>
+                Connecting generation, storage and intelligent
+                energy management into one coordinated system.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHAT WE DO
+    ========================================== -->
+
+    <section class="what-we-do">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span class="mini-title">
+                    What We Do
+                </span>
+
+
+                <h2>
+                    Energy solutions designed
+                    for the real world.
+                </h2>
+
+
+                <p>
+                    Voltarix systems are designed around
+                    practical energy requirements — from
+                    backup power and renewable energy
+                    utilisation to load management and
+                    energy optimisation.
+                </p>
+
+            </div>
+
+
+
+            <div class="solution-grid">
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Battery Energy Storage
+                    </h3>
+
+                    <p>
+                        Integrated BESS solutions designed
+                        to store energy and make it available
+                        when it is needed most.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Solar Integration
+                    </h3>
+
+                    <p>
+                        Solar PV can be integrated with
+                        energy storage to improve renewable
+                        energy utilisation and system
+                        flexibility.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Backup Power
+                    </h3>
+
+                    <p>
+                        Hybrid configurations help maintain
+                        critical loads when normal utility
+                        or generator supply is interrupted.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Energy Management
+                    </h3>
+
+                    <p>
+                        Intelligent monitoring and control
+                        allows stored and generated energy
+                        to be managed according to system
+                        demand.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Peak Management
+                    </h3>
+
+                    <p>
+                        Energy storage can support peak
+                        shaving and demand mitigation,
+                        reducing dependence on the grid
+                        during periods of high demand.
+                    </p>
+
+                </div>
+
+
+
+                <div class="solution-card">
+
+                    <div class="solution-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Hybrid Energy Systems
+                    </h3>
+
+                    <p>
+                        Solar PV, battery storage, grid supply
+                        and generator systems can work
+                        together as an integrated power
+                        architecture.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         OUR APPROACH
+    ========================================== -->
+
+    <section class="values-section">
+
+        <div class="values-heading">
+
+            <span>
+                Our Approach
+            </span>
+
+
+            <h2>
+                Built around four principles.
+            </h2>
+
+        </div>
+
+
+
+        <div class="values-grid">
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Reliability
+                </h3>
+
+                <p>
+                    Systems engineered to provide dependable
+                    energy across changing operating
+                    conditions.
+                </p>
+
+            </div>
+
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    🛡
+                </div>
+
+                <h3>
+                    Safety
+                </h3>
+
+                <p>
+                    Protection, monitoring and system-level
+                    safeguards form an essential part of
+                    our energy solutions.
+                </p>
+
+            </div>
+
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ▦
+                </div>
+
+                <h3>
+                    Modularity
+                </h3>
+
+                <p>
+                    Flexible system architecture allows
+                    energy solutions to be configured around
+                    different capacity and deployment
+                    requirements.
+                </p>
+
+            </div>
+
+
+
+            <div class="value">
+
+                <div class="value-icon">
+                    ☀
+                </div>
+
+                <h3>
+                    Sustainability
+                </h3>
+
+                <p>
+                    Integrating renewable generation and
+                    energy storage helps make better use
+                    of available solar energy.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         CTA
+    ========================================== -->
+
+    <section class="about-cta">
+
+        <div>
+
+            <h2>
+                Let's build smarter energy.
+            </h2>
+
+
+            <p>
+                Speak with Voltarix about an energy
+                solution for your application.
+            </p>
+
+        </div>
+
+
+        <a href="contact.html">
+            Contact Us →
+        </a>
+
+    </section>
+
+
+</body>
+
+</html>
