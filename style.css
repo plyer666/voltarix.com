@@ -593,50 +593,59 @@ footer,
 @media (max-width: 600px) {
 
     .navbar {
-        position: relative;
-        width: 100%;
-        box-sizing: border-box;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
 
-        display: block;
-        padding: 20px 15px 18px;
-        text-align: center;
+        width: 100%;
+        padding: 14px 16px !important;
+        box-sizing: border-box;
+        gap: 12px;
     }
 
-    /* FORCE logo to exact center */
+    /* Logo stays on the left */
     .navbar .logo {
-        position: relative !important;
+        position: static !important;
+        transform: none !important;
 
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        display: flex;
+        align-items: center;
 
-        width: max-content !important;
-        margin: 0 0 18px 0 !important;
+        width: auto !important;
+        margin: 0 !important;
         padding: 0 !important;
+
+        flex-shrink: 0;
     }
 
     .navbar .logo img {
         display: block;
-        width: 165px;
+        width: 105px !important;
         height: auto;
-
         margin: 0 !important;
     }
 
+    /* Navigation stays on the right */
     .nav-links {
-        display: flex;
-        width: 100%;
-
-        justify-content: space-evenly;
+        display: flex !important;
+        flex-direction: row !important;
         align-items: center;
+        justify-content: flex-end !important;
 
-        gap: 5px;
-        margin: 0;
-        padding: 0;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        gap: 12px !important;
+        flex-wrap: nowrap !important;
     }
 
     .nav-links a {
-        margin: 0;
+        font-size: 12px !important;
         white-space: nowrap;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
